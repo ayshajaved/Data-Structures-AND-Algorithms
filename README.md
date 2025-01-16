@@ -1,7 +1,7 @@
 # Data Structures and Algorithms (DSA) with Python
 
 ## Introduction
-This repository is dedicated to learning Data Structures and Algorithms (DSA) with Python. The goal is to master various DSA topics and implement them efficiently in Python. The course is structured to cover the essential topics in DSA and then progress to more advanced concepts.
+This repository is dedicated to learning Data Structures and Algorithms (DSA) with Python. The goal is to master various DSA topics and implement them efficiently in Python. The course is structured to cover the essential issues in DSA and then progress to more advanced concepts.
 
 ## Table of Contents
 

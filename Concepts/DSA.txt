@@ -8,7 +8,7 @@ Developing of software:
 --> Solution
 --> Algorithm
 --> Pseudocode
---> Program
+--> Program/Source code (executable code)
 --> Documentation
 --> Testing
 --> Deployment
@@ -32,4 +32,14 @@ Difference between software and Program
 Software is a collection of programs,documentation and Data that are used to perform a specific task or set 
 of tasks. A program is a set of instructions that a computer can execute to perform a specific task.
 
-Software is the code that operates on Data
+Software is the code that operates on Data.
+
+Flowchart:
+Algorithm is represented graphically using flowcharts. It is a diagram that shows the steps of an algorithm in
+a visual way. It is used to represent the flow of control in a program.
+
+The American National Standards
+Institute (ANSI) set standards for
+flowcharts and their symbols
+
+

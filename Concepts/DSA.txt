@@ -38,8 +38,14 @@ Flowchart:
 Algorithm is represented graphically using flowcharts. It is a diagram that shows the steps of an algorithm in
 a visual way. It is used to represent the flow of control in a program.
 
-The American National Standards
-Institute (ANSI) set standards for
-flowcharts and their symbols
+The American National Standards Institute (ANSI) set standards for flowcharts and their symbols
 
+Limitations of flowchart:
+-Not suitable for OOP
+-Not suitable for complex problems
+-Not suitable for stakeholders
+-Not suitable for explaining events
+-Not suitable for sofware modelling
 
+UML:
+Unified Modeling Language (UML) is a standardized modeling language used to visualize, specify, construct, and document the artifacts of a software system. It is used to create diagrams and models that represent the different aspects of a system, such as its structure, behavior, and interactions. UML is widely used in software development, particularly in object-oriented programming, to help developers understand and communicate their designs.

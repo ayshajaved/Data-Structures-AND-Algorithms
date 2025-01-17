@@ -1,0 +1,22 @@
+@startuml shapes
+abstract class Shape {
+    + area() : float
+    + perimeter() : float
+}
+
+class Rectangle {
+    + length: float
+    + width: float
+    + area() : float
+    + perimeter() : float
+}
+
+class Circle {
+    + radius: float
+    + area() : float
+    + perimeter() : float
+}
+
+Shape <|-- Rectangle
+Shape <|-- Circle
+@enduml

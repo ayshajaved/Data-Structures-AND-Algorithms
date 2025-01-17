@@ -3,10 +3,28 @@ A data structure is a specialized format for organizing, managing, and storing d
 efficient access and modification. It provides a systematic way of solving problems and optimizing algorithms 
 by using well-organized data.
 
+Developing of software:
+--> purpose/problem statement 
+--> Solution
+--> Algorithm
+--> Pseudocode
+--> Program
+--> Documentation
+--> Testing
+--> Deployment
+--> Maintenance
+--> Evaluation
+--> Feedback
+--> Improvement
+
 Algorithm:
 An algorithm is a well-defined procedure that takes some input and produces a corresponding output. It is a
 step-by-step procedure for solving a problem or performing a computation. Algorithms are used to solve problems
 efficiently and effectively.
+It is usually written in plain, natural language or represented graphically using flowcharts.
+
+Pseudocode:
+Pseudocode is a simplified, informal, and language-agnostic way of writing an algorithm. It resembles a mix of natural language and programming syntax to bridge the gap between an algorithm and actual code.
 
 DSA operates data and organized it.
 

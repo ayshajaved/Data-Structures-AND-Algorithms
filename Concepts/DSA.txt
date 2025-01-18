@@ -1,3 +1,16 @@
+Data:
+It is defined as a collection of facts, figures, words, values, and other details that are collected and organized to
+support a particular decision or action. Data can be in the form of numbers, text, images, audio, video, etc.
+
+Program:
+A program is a set of instructions that are written in a programming language and can be executed by a computer. 
+It is a sequence of instructions that tell the computer what to do. A program is a set of instructions that are 
+written in a programming language and can be executed by a computer.
+
+Types of data:
+data item: a single piece of information, such as a name, address, or phone number.
+data group: a collection of related data items, such as a list of names and addresses.
+
 Data Structure:
 A data structure is a specialized format for organizing, managing, and storing data in a way that enables 
 efficient access and modification. It provides a systematic way of solving problems and optimizing algorithms 
@@ -61,4 +74,23 @@ To increase Progratn Execution Speed
 To Reusability of Data
 To irnprose Abstraction of Progranl
 To Solve real world problems
+
+Types of Data structures: (on basis of data types)
+Primitive data structure: (int, float, char, boolean, complex in python)
+non-primitve data structure: (array, linked list, stack, queue, tree, graph)
+Types of Data structures: (on basis of storage)
+Linear data structure: (array, linked list, stack, queue)
+Non-linear data structure: (tree, graph)
+
+Types of Data structures: (on basis of access)
+Sequential access: (array, linked list)
+Random access: (stack, queue, tree, graph)
+
+Types of Data structures: (on basis of implementation)
+Static data structure: (array, stack, queue)
+Dynamic data structure: (linked list, tree, graph)
+
+Types of Data structures: (on basis of operation)
+Homogeneous data structure: (array, stack, queue)
+Heterogeneous data structure: (linked list, tree, graph)
 

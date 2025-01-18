@@ -96,3 +96,29 @@ Types of Data structures: (on basis of operation)
 Homogeneous data structure: (array, stack, queue)
 Heterogeneous data structure: (linked list, tree, graph)
 
+Memory by primitve data structures:
+int: 4 bytes
+float: 4 bytes
+char: 1 byte
+boolean: 1 byte
+pointer: 4 bytes
+complex: 8 bytes
+none: 0 bytes
+null: 0 bytes
+
+Memory by non-primitve data structures:
+array: depends on the number of elements and the data type of the elements
+linked list: depends on the number of elements and the data type of the elements
+stack: depends on the number of elements and the data type of the elements
+queue: depends on the number of elements and the data type of the elements
+tree: depends on the number of nodes and the data type of the elements
+graph: depends on the number of nodes and the data type of the elements
+map/associated array/hash table/dictionary: depends on the number of elements and the data type of the elements
+multimap: depends on the number of elements and the data type of the elements
+bag: depends on the number of elements and the data type of the elements
+file: depends on the size of the file
+set: depends on the number of elements and the data type of the elements
+tuple: depends on the number of elements and the data type of the elements
+list: depends on the number of elements and the data type of the elements
+
+Relation between data structures and programming languages:

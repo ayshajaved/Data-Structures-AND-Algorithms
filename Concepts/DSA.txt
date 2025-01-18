@@ -17,6 +17,11 @@ Developing of software:
 --> Feedback
 --> Improvement
 
+Difference between data structure and database
+Data structure is a way to organize data and store in RAM(temporray storage) in a computer so that it can be 
+efficiently accessed and modified while, Database is a collection of data that is stored in memory in a way 
+that it can be easily accessed, managed, and updated.
+
 Algorithm:
 An algorithm is a well-defined procedure that takes some input and produces a corresponding output. It is a
 step-by-step procedure for solving a problem or performing a computation. Algorithms are used to solve problems
@@ -49,3 +54,11 @@ Limitations of flowchart:
 
 UML:
 Unified Modeling Language (UML) is a standardized modeling language used to visualize, specify, construct, and document the artifacts of a software system. It is used to create diagrams and models that represent the different aspects of a system, such as its structure, behavior, and interactions. UML is widely used in software development, particularly in object-oriented programming, to help developers understand and communicate their designs.
+
+Importance of DSA
+To build an efficient progratn
+To increase Progratn Execution Speed
+To Reusability of Data
+To irnprose Abstraction of Progranl
+To Solve real world problems
+

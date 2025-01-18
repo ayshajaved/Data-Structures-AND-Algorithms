@@ -76,11 +76,13 @@ To irnprose Abstraction of Progranl
 To Solve real world problems
 
 Types of Data structures: (on basis of data types)
-Primitive data structure: (int, float, char, boolean, complex in python)
-non-primitve data structure: (array, linked list, stack, queue, tree, graph)
+Primitive data structure: (int,pointer,float, char, boolean, complex in python, none, null)
+non-primitve data structure: (array, linked list, stack, queue, tree, graph, map/associated array/hash table/dictionary in python, multimap,bag, file, set, tuple,list)
 Types of Data structures: (on basis of storage)
 Linear data structure: (array, linked list, stack, queue)
 Non-linear data structure: (tree, graph)
+
+*nonlinear data structure will be preffered on linear bcz it is memory efficient
 
 Types of Data structures: (on basis of access)
 Sequential access: (array, linked list)

@@ -54,3 +54,27 @@ Data abstraction:
 The data abstraction is a way of hiding the implementation details of a data structure from the user.
 
 ADT are used by set of operations called interface
+
+Constructors Create and initialize new instances of ADT
+Accessors: Return data contained in an instance without modifying it
+Mutators: Modify the contents of an
+ADT instance.
+Iterators: Process individual data
+components sequentially.
+
+Computational complexity:
+
+Computational complexity is a measure of the amount of computational resources (such as time and memory) required to execute an algorithm. It is used to compare the efficiency of different algorithms and to predict the performance of an algorithm on different inputs.
+
+The computational complexity of an algorithm is usually expressed in terms of the size of the input to the algorithm. For example, the computational complexity of a sorting algorithm might be expressed as O(n log n), where n is the size of the input list.
+
+There are two main types of computational complexity: time complexity and space complexity.
+Time complexity is a measure of the amount of time an algorithm takes to execute, usually expressed in terms
+of the size of the input. Space complexity is a measure of the amount of memory an algorithm uses, usually expressed in terms of the size of the input.
+
+Analyze complexity:
+Pratical/Experimental analysis: Measure the time and space complexity of an algorithm by running it on a variety of inputs and measuring the resources used.
+Functional/Theoretical analysis: Analyze the time and space complexity of an algorithm using mathematical techniques such as asymptotic analysis.
+
+Big O notation:
+Big O notation is a mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity. It is used to describe the time complexity of an algorithm.

@@ -36,3 +36,21 @@ my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}
 ``` 
 These are the basic data structures in Python which are used to store and manipulate data.
 These are called as ADT (Abstract Data Type)
+
+ADT:
+ADT is a theoretical concept in computer science which describes the behavior of a data structure without specifying its implementation. It is a way to define the properties and operations of a data structure without worrying about the underlying implementation.
+
+ADT is a way to define the behavior of a data structure without worrying about the underlying implementation. It is a way to define the properties and operations of a data structure without worrying about the underlying implementation.
+
+An abstraction is a mechanism for separating uses and implementation of an object.
+Two common types of abstractions
+procedural or functional abstraction
+and data abstraction.
+
+procedural abstracton:
+The procedural abstraction is a way of hiding the implementation details of a procedure or function from the user.
+
+Data abstraction:
+The data abstraction is a way of hiding the implementation details of a data structure from the user.
+
+ADT are used by set of operations called interface

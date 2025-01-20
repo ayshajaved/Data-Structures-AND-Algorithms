@@ -1,0 +1,37 @@
+
+An Abstract Data Type (ADT) is a logical description of how data is organized and the operations that can be performed on it, independent of how it is implemented. ADTs focus on what operations are performed rather than how they are implemented. They are the building blocks of data structures in computer science and are essential for solving problems efficiently.
+
+Key Characteristics of ADTs:
+Encapsulation: ADTs encapsulate data and provide a set of operations that can be performed on the data, hiding the implementation details.
+Independence: ADTs are defined by their behavior and not their implementation. This allows flexibility to use different data structures for the same ADT.
+Modularity: ADTs help in designing modular code by separating the interface (operations) from the implementation.
+Examples of Common ADTs:
+List:
+A collection of elements in a sequence.
+Operations: Insert, delete, traverse, search, update.
+Stack:
+A collection following the LIFO (Last In, First Out) principle.
+Operations: Push (add), pop (remove), peek (view top element), isEmpty.
+Queue:
+A collection following the FIFO (First In, First Out) principle.
+Operations: Enqueue (add), dequeue (remove), front (view first element), isEmpty.
+Deque (Double-Ended Queue):
+A generalized queue where elements can be added or removed from both ends.
+Priority Queue:
+A queue where elements are dequeued based on priority, not just order.
+Set:
+A collection of unique elements.
+Operations: Add, remove, check membership, union, intersection, difference.
+Map (or Dictionary):
+A collection of key-value pairs.
+Operations: Add, remove, search by key, update value.
+Why are ADTs Important?
+Abstraction: They provide a high-level abstraction that allows developers to focus on the problem rather than the low-level details of implementation.
+Reusability: ADTs can be reused across different programs and projects, improving efficiency.
+Ease of Maintenance: Since the implementation is hidden, changes to the implementation do not affect the interface.
+Implementation of ADTs:
+ADTs are implemented using data structures such as arrays, linked lists, heaps, or hash tables. For example:
+
+A stack can be implemented using an array or a linked list.
+A queue can be implemented using a circular array or a linked list.
+In summary, ADTs define the "what" (operations and behavior) while leaving the "how" (implementation) to the programmer.

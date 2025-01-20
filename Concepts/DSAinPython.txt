@@ -76,10 +76,43 @@ Analyze complexity:
 Pratical/Experimental analysis: Measure the time and space complexity of an algorithm by running it on a variety of inputs and measuring the resources used.
 Functional/Theoretical analysis: Analyze the time and space complexity of an algorithm using mathematical techniques such as asymptotic analysis.
 
-order of n :
+order of n/asymptotic analysis:
+It is the analytical process to find the space or time complexity in terms of n (input size)
 1:f(n) = 100n +1
 2:f(n) = n^2 + 2n + 1
-hence the order of n is n^2 for 2 solution algorithm and n for 1
+3: f(n) = 700
+hence the order of n is n^2 for 2 solution algorithm, n for 1 ,and 1 for 3algo by aysmptotic analysis.
+
+To find order of n we use aysmptotic analysis.
+aysmptote:
+when we represnt something upto a certain limit or infinity
+It is the best method but accurate
+
+Analysis Cases of aysmptote:
+Good: when the value of n is small, so time execution is small
+Bad: when the value of n is large, so time execution is large
+Average: Average
+*always write a algo on worst case
+
+Linear search program:
+Linear search is a simple search algorithm that searches for an element in a list by checking each element in the list one by one until the element is found or the end of the list is reached.
+eg in linear search of key = 1 in a list of [2,4,5,6,1,9]
+Best case is when 2 is searched
+Worst case is when 9 is searched
+Average case is when 5 is searched
+
+Binary search program:
+Binary search is a search algorithm that finds the position of a target value within a sorted array. It works by repeatedly dividing the search interval in half. If the value of the search key is less than the item in the middle of the interval, the search continues in the lower half, otherwise it continues in the upper half. This process continues until the value is found or the interval is empty.
+
+Bubble sort program:
+Bubble sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.
+
+As there are three analysis cases, there are 3 aysmptote notation
+
+1:Big O notation(worst case)
+2:Big Omega notation(best case)
+3:Big Theta notation(average case)
+
 
 O(1) - constant time complexity
 O(log n) - logarithmic time complexity

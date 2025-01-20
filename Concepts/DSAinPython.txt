@@ -124,8 +124,13 @@ O(n log n) - linearithmic time  complexity/Quasilinear:First the complexity incr
 O(n^2) - quadratic time complexity:
 The algorithm takes time proportional to the square of the size of the input. eg bubble sort
 O(2^n) - exponential time complexity:
-The algorithm takes time proportional to 2 raised to the power of the size of the input. eg fibonacci series
+The algorithm takes time proportional to 2 raised to the power of the size of the input. eg fibonacci series, recursion
 O(n!) - factorial time complexity:
 The algorithm takes time proportional to the factorial of the size of the input. eg travelling salesman problem
 
+Time-Space Trade off:
+Time-Space Tradeoff is a concept in computer science that refers to the relationship between the time complexity and space complexity of an algorithm. It is a trade-off between the amount of time an algorithm takes to run and the amount of memory it uses.
+If we intend to increase the time complexity, space complexity decreases and vice versa
+
+eg Solving fibonacci series using recursion and loop; for recusion time complexity is high O(2^n) and space complexity is low O(1) and for loop time complexity is low O(n) and space complexity is O(n) high
 

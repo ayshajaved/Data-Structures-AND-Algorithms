@@ -76,5 +76,18 @@ Analyze complexity:
 Pratical/Experimental analysis: Measure the time and space complexity of an algorithm by running it on a variety of inputs and measuring the resources used.
 Functional/Theoretical analysis: Analyze the time and space complexity of an algorithm using mathematical techniques such as asymptotic analysis.
 
+order of n :
+1:f(n) = 100n +1
+2:f(n) = n^2 + 2n + 1
+hence the order of n is n^2 for 2 solution algorithm and n for 1
+
+O(1) - constant time complexity
+O(log n) - logarithmic time complexity
+O(n) - linear time complexity
+O(n log n) - linearithmic time complexity
+O(n^2) - quadratic time complexity
+O(2^n) - exponential time complexity
+O(n!) - factorial time complexity
+
 Big O notation:
 Big O notation is a mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity. It is used to describe the time complexity of an algorithm.

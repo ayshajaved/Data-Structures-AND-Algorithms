@@ -1,9 +1,81 @@
 Python has inbuilt Data structures which are used to store and manipulate data. These data structures are:
+Inbuilt Simple data structures:
+1.None
+2.Number
+    a. Integer
+    b. Float
+    c. Complex
+3. Booleans
+Inbuilt Complex Data Structures:
+1.Sequences
+    a. Immutable
+        1. String
+        2. Tuple
+        3. Bytes
+    b. Mutable
+        1. List
+        2. Byte Array
+        3. Array
+2.Set types
+    a. Set
+    b. Frozenset
+3. Map type
+    a. Dictionary
 
-1. List
-2. Tuple
-3. Set
-4. Dictionary
+User-define Data Stuctures:
+1. Stack:Linear, homoenous
+    a. LIFO (Last In First Out)
+    b. FILO (First In Last Out)
+Stack ADT: Stack with the operations on stack is stack ADT
+    a. push(item)
+    b. pop()
+    c. peek()/top()
+    d. is_empty()
+    e. size()
+    f. is_full()
+    g. clear()
+    h. search(item)
+    i. remove(item)
+    j. insert(item, index)
+    k. delete(index)
+    l. reverse()
+    m. sort()
+    n. concatenate(stack2)
+    o. copy()
+    p. merge(stack2)
+    q. split()
+    r. rotate()
+    s. flatten()
+    t. compress()
+    u. decompress()
+    v. map(function)
+    w. filter(function)
+    x. reduce(function)
+    y. zip(stack2)
+    z. unzip()
+2. Queue:
+    a. FIFO (First In First Out)
+    b. LILO (Last In Last Out)
+3. Linked List:
+    a. Singly Linked List
+    b. Doubly Linked List
+    c. Circular Linked List
+4. Tree
+5. Graph
+
+Linear relationship:
+1:Array: Elements linear in memeory
+2:LinkedList:Elements are not linear in memory but are linked through pointers
+3:Stack:
+4:Queue:
+5:Hash Table:
+6:Hash Map:
+7:Hash Set:
+8:Hash Table:
+
+Non-Linear relationship:
+1.Tree:
+2.Graph:
 
 These data structures are used to store data in a specific way and can be used to perform various operations on the data.
 List:

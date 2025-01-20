@@ -76,38 +76,16 @@ Linear relationship:
 Non-Linear relationship:
 1.Tree:
 2.Graph:
-
-These data structures are used to store data in a specific way and can be used to perform various operations on the data.
-List:
-A list is a collection of items which are ordered and changeable. It is written with square brackets [].
-Example:
-python
-```python
-my_list = [1, 2, 3, 4, 5]
-```
-Tuple:
-A tuple is a collection of items which are ordered and unchangeable. It is written with round brackets().
-Example:
-python
-```python
-my_tuple = (1, 2, 3, 4, 5)
-```
-Set:
-A set is a collection of items which are unordered and unchangeable. It is written with curly brackets {}.
-Example:
-python
-```python
-my_set = {1, 2, 3, 4, 5}
-```
-Dictionary:
-A dictionary is a collection of key-value pairs. It is written with curly brackets {} and each key-value pair is separated by a colon :.
-Example:
-python
-```python
-my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}
-``` 
-These are the basic data structures in Python which are used to store and manipulate data.
-These are called as ADT (Abstract Data Type)
+3:Heap:
+4:Priority Queue:
+5:Binary Search Tree:
+6:Binary Tree:
+7:AVL Tree:
+8:Red-Black Tree:
+9:Hash Table:
+10:Hash Map:
+11:Hash Set:
+12:Hash Table:
 
 ADT:
 ADT is a theoretical concept in computer science which describes the behavior of a data structure without specifying its implementation. It is a way to define the properties and operations of a data structure without worrying about the underlying implementation.

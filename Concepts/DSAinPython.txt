@@ -113,14 +113,19 @@ As there are three analysis cases, there are 3 aysmptote notation
 2:Big Omega notation(best case)
 3:Big Theta notation(average case)
 
-
-O(1) - constant time complexity
-O(log n) - logarithmic time complexity
-O(n) - linear time complexity
-O(n log n) - linearithmic time complexity
-O(n^2) - quadratic time complexity
-O(2^n) - exponential time complexity
-O(n!) - factorial time complexity
-
 Big O notation:
 Big O notation is a mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity. It is used to describe the time complexity of an algorithm.
+
+Big O notations:
+O(1) - constant time complexity: the algorithm takes the same amount of time regardless of the size of the input.
+O(log n) - logarithmic time complexity: the algorithm takes time proportional to the logarithm of the size of the input.The program runs less than the size of the input. Size of input decreases in each step eg binary seacrh 
+O(n) - linear time complexity: the algorithm takes time proportional to the size of the input. eg linear search
+O(n log n) - linearithmic time  complexity/Quasilinear:First the complexity increases as n increases and then it decreases eg merge sort
+O(n^2) - quadratic time complexity:
+The algorithm takes time proportional to the square of the size of the input. eg bubble sort
+O(2^n) - exponential time complexity:
+The algorithm takes time proportional to 2 raised to the power of the size of the input. eg fibonacci series
+O(n!) - factorial time complexity:
+The algorithm takes time proportional to the factorial of the size of the input. eg travelling salesman problem
+
+

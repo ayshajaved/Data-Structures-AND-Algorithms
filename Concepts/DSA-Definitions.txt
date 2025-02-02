@@ -4,14 +4,13 @@ support a particular decision or action. Data can be in the form of numbers, tex
 
 Program:
 A program is a set of instructions that are written in a programming language and can be executed by a computer. 
-It is a sequence of instructions that tell the computer what to do. A program is a set of instructions that are 
-written in a programming language and can be executed by a computer.
+It is a sequence of instructions that tell the computer what to do.
 
 Types of data:
 data item: a single piece of information, such as a name, address, or phone number.
 data group: a collection of related data items, such as a list of names and addresses.
 
-Data Structure:
+Data Structure: Data organized in a particular structure
 A data structure is a specialized format for organizing, managing, and storing data in a way that enables 
 efficient access and modification. It provides a systematic way of solving problems and optimizing algorithms 
 by using well-organized data.
@@ -40,6 +39,13 @@ An algorithm is a well-defined procedure that takes some input and produces a co
 step-by-step procedure for solving a problem or performing a computation. Algorithms are used to solve problems
 efficiently and effectively.
 It is usually written in plain, natural language or represented graphically using flowcharts.
+
+Characteristics:
+-input
+-output
+-Definitness
+-Effectiveness
+-Finitness
 
 Pseudocode:
 Pseudocode is a simplified, informal, and language-agnostic way of writing an algorithm. It resembles a mix of natural language and programming syntax to bridge the gap between an algorithm and actual code.
@@ -122,3 +128,11 @@ tuple: depends on the number of elements and the data type of the elements
 list: depends on the number of elements and the data type of the elements
 
 Relation between data structures and programming languages:
+Operations on Data Structure:
+-Searching
+-Traversing
+-sorting
+-Merging
+-Inserting
+-Updating
+-Deleting

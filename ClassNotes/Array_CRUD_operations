@@ -2,6 +2,7 @@ class ArrayOperations():
     def __init__(self):
         self.array = []
         self.size = 10
+        #manually initialize the array with 10 elements
         self.array = [0] * self.size
 
     def create(self, data):
@@ -41,7 +42,7 @@ class ArrayOperations():
                 self.array[i] = self.array[i + 1]   
             self.size -= 1
             self.array[self.size] = 0
-
+#Testing Operations
 a = ArrayOperations()
 a.create([1,2,3,4,5])
 print(a.display()) 

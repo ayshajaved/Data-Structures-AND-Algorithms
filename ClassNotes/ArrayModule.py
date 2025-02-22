@@ -33,6 +33,19 @@ class ArrayOperations():
         for i in range(0, len(self.arr)):
             print(self.arr[i], end = " ")
         print()
+    #There comes value to be searched
+    # def searchArray(self,value):
+    #     index = self.arr.index(value)
+    #     print("Value found at index", index)
+    #Searching without using builtin functions
+    def searchArray(self,value):
+        for i in range(0, len(self.arr)):
+            if self.arr[i] == value:
+                print("Value found at index", i)
+                return
+        print("Value not found")
+    def sortArray(self):
+        self.arr.tolist()
 
 #Array operations
 obj = ArrayOperations()

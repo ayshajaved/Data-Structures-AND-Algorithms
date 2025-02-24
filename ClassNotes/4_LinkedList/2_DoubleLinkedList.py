@@ -56,11 +56,25 @@ class DLL:
         while(currentNode is not None):
             print(currentNode.data)
             currentNode = currentNode.next
+    def deleteNode(self, index):
+        if (index <0 or index > (self.length())):
+            print("Index is invalid..")
+            return
+        currentNode = self.head
+        for _ in range(index-1):
+            currentNode = currentNode.next
+        currentNode.next.previous = currentNode
+        currentNode.next = currentNode.next.next
+
     
 list = DLL()
 list.appendNode(10)
 list.appendNode(20)
+# list.displayList()
 list.addNode(0,30)
 list.addNode(2,40)
 list.addNode(3,200)
+list.displayList()
+print("After Deleting..")
+list.deleteNode(3)  #3rd node to be deleted starting from index 0
 list.displayList()

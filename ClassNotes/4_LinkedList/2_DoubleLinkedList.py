@@ -16,6 +16,7 @@ class DLL:
     def __init__(self):
         #Initially the head of the Double Linked List is None
         self.head = None
+
     def length(self):
         count = 1
         currentNode = self.head
@@ -23,6 +24,7 @@ class DLL:
             count+=1
             currentNode = currentNode.next
         return count
+    
     def appendNode(self, data):
         n = Node(data)
         if self.head is None:
@@ -33,6 +35,7 @@ class DLL:
                 currentNode = currentNode.next
             currentNode.next = n
             n.previous = currentNode
+
     #Adding node at any index
     def addNode(self, at, data):
         if(at < 0 or at > self.length()):
@@ -56,6 +59,7 @@ class DLL:
         while(currentNode is not None):
             print(currentNode.data)
             currentNode = currentNode.next
+    
     def deleteNode(self, index):
         if (index <0 or index > (self.length())):
             print("Index is invalid..")
@@ -66,7 +70,7 @@ class DLL:
         currentNode.next.previous = currentNode
         currentNode.next = currentNode.next.next
 
-    
+#Testing
 list = DLL()
 list.appendNode(10)
 list.appendNode(20)

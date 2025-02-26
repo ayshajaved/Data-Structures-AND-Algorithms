@@ -17,7 +17,7 @@ class DLL:
         #Initially the head of the Double Linked List is None
         self.head = None
     def length(self):
-        count = 0
+        count = 1
         currentNode = self.head
         while(currentNode is not None):
             count+=1

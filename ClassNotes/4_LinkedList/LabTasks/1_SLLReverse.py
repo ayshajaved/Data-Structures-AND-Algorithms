@@ -32,16 +32,17 @@ class SLL:
         while currentNode is not None:
             print(currentNode.data)
             currentNode = currentNode.next
-    '''Reversing By Iterative in place method best space and time complexity O(1), There are also other methods, Recursive or stack but they have the complexity of O(n)'''
+    '''Reversing By Iterative in place method best space O(1) and time complexity O(n), There are also other methods, Recursive or stack but they have the complexity of O(n)'''
     def reverse(self):
-        temp = None
-        current = self.head
-        while current is not None:
-            next_node = current.next  
-            current.next = temp       
-            temp = current            
-            current = next_node       
-        self.head = temp
+        prev = None
+        currentNode = self.head
+        next = self.head
+        while(currentNode is not None):
+            next = next.next
+            currentNode.next = prev
+            prev = currentNode
+            currentNode = next
+        self.head = prev
 
 s = SLL()
 s.addNode(0, 10)

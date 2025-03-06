@@ -52,25 +52,3 @@ def findDuplicates(l):
 list3 = [1,2,3,4,7,8,9,8,7,3,46]
 print(findDuplicates(list3))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-'''
-Algorithm to find the duplicate elements in a sorted list
-'''

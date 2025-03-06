@@ -243,3 +243,5 @@ print("After:"); llist.printList()
 3. **Insertion Sort**: Think of organizing books on a shelf, sliding each new book into its proper spot.
 4. **Merge Sort**: Like splitting a messy pile of papers into smaller piles, sorting each, then combining them.
 5. **Quick Sort**: Imagine picking a middle height and having everyone shorter go left, taller go right, then repeating.
+
+Most efficient is merge sort

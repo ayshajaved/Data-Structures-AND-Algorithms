@@ -2,6 +2,11 @@
 What is a Stack?
 A stack is a linear data structure that follows the LIFO (Last In, First Out) principle. This means that the last element added to the stack will be the first one to be removed.
 
+Static languages(java, c):
+-Same data in stack
+Dynamic languages(python):
+-different data types
+
 Operations:
 1--> Push 
 2--> Peek (Fetching the top element without removing)

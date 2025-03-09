@@ -1,4 +1,41 @@
 '''
+Create a Station Node:
+Each station will have the following attributes:
+-Station Name
+-Distance from Previous Station (in km)
+-Next Station pointer
+-Previous Station pointer
+
+Operations to Implement:
+Add a station at the beginning of the route.
+Add a station at the end of the route.
+Add a station at a specific position in the route.
+
+Remove a Station from the Route:
+Remove a station by its position in the route.
+Remove the first station in the route.
+Remove the last station in the route.
+
+Display the Entire Route:
+Display the route in both forward (start to end) and reverse (end to start) order, showing the
+station names and distances between them.
+
+Find the Total Distance:
+Implement a function to calculate and display the total distance of the entire route from the
+first to the last station.
+
+Find Shortest Path Between Two Stations:
+Implement a function that takes two station names and calculates the total distance between
+them by traversing the route.
+
+Bonus Challenge:
+Optimize for Multiple Routes:
+Allow the creation and management of multiple routes (e.g., Route A, Route B, Route
+C). Each route should be managed independently using a doubly linked list, and users
+should be able to switch between routes for modifications or queries.
+'''
+#Solution
+'''
 Lab Assignment:1
 Name : ayesha javed
 Roll number: sp24-bse-020-B

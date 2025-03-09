@@ -7,7 +7,7 @@ Static languages(java, c):
 Dynamic languages(python):
 -different data types
 
-Operations:
+Operations-O(1)Complexity:
 1--> Push 
 2--> Peek (Fetching the top element without removing)
 3--> Pop  (Remove the top element)

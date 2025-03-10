@@ -138,7 +138,7 @@ A binary tree in which all levels are completely filled except possibly the last
 
 ---
 
-### **14. Perfect Binary Tree**
+### **14. Perfect Binary Tree** 
 A binary tree where all interior nodes have **two children**, and all leaf nodes are at the **same level**.
 
 ---

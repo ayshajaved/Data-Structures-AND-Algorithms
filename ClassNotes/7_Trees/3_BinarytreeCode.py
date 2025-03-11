@@ -41,6 +41,14 @@ class BinaryTree:
             self.left.preorder_traversal()
         if self.right:
             self.right.preorder_traversal()
+    def postorder_traversal(self):
+        if self.left:
+            self.left.postorder_traversal()
+        if self.right:
+            self.right.postorder_traversal()
+        print(self.data, end = " ")
+
+#Testing
 tree = BinaryTree(10) #Inilializing root node
 tree.addNode(20) #will be inserted in right
 tree.addNode(5)  #will be inserted in left        
@@ -54,6 +62,10 @@ tree.addNode(3)
 print("\n**Inorder Traversal**")
 tree.inorder_traversal()
 
-#preorder
+#preorder(root-left-right)
 print("\n**ُPreorder Traversal**")
 tree.preorder_traversal()
+
+#PostOrder Traversal
+print("\n**ُPostorder Traversal**")
+tree.postorder_traversal()

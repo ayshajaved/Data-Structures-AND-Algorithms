@@ -1,26 +1,26 @@
+'''
+Lab Task: Application of Stack
+Name : Ayesha Javed
+Registeration number:SP24-BSE-020-B
+'''
 #Implementing the stack using the list
 class Stack:
     def __init__(self):
         self.stack = []
-        self.top = -1
     def push(self, value):
-        self.top +=1
-        if self.top < self.size():
-            self.stack[self.top] = value
-        else:
-            self.stack +=[value]
+        self.stack.append(value)
     def peek(self):
         #returning the last top element of the stack
         if not self.isEmpty():
-            return self.stack[self.top]
+            return self.stack[-1]
+        return None
     def isEmpty(self):
         return self.size() ==0
     def pop(self):
         #deleting the top element also returning
-        top = self.stack[self.top]
-        self.top -=1
-        self.stack.pop()
-        return top
+        if not self.isEmpty():
+            return self.stack.pop()
+        return None
     def display(self):
         print(self.stack[::-1])
     def size(self):
@@ -45,6 +45,7 @@ class InfixToPostfix:
         If there is a character, it will be pushed to the postfix, otherwise if it is a operator, pushed to stack, pushing check if the pop element has higher precendence then current character, that that element is pushed to postfix(list)
         '''
         for char in expression:
+            expression = expression.replace(" ", "") #Excluding spaes
             if char.isalnum():
                 #append to postfix
                 self.postfix.append(char)
@@ -65,6 +66,25 @@ class InfixToPostfix:
         while(not self.stack.isEmpty()):
             self.postfix.append(self.stack.pop())
         return ''.join(self.postfix)    
+class EvaluatingPostfix:
+    def __init__(self):
+        self.stack = Stack()
+    def evaluate_postfix(self, postfix_expression):
+        for char in postfix_expression:
+            if char.isdigit():
+                self.stack.push(int(char))
+            else:  # Operator
+                b = self.stack.pop()
+                a = self.stack.pop()
+                if char == '+':
+                    self.stack.push(a + b)
+                elif char == '-':
+                    self.stack.push(a - b)
+                elif char == '*':
+                    self.stack.push(a * b)
+                elif char == '/':
+                    self.stack.push(a / b)
+        return self.stack.pop()
 #Testing
 # s = Stack()
 # s.push(20)
@@ -76,11 +96,18 @@ class InfixToPostfix:
 # s.display()
 
 #User Interface
-print("**************************")
+print("***************************")
 print("Converting Infix to PostFix")
-print("**************************")
+print("***************************")
 
 obj = InfixToPostfix()
+evaluator = EvaluatingPostfix()
 infix_expression = input("Enter infix Expression: ")
 print(f"\nYour postfix Expression for given infix {infix_expression} : ")
-print(obj.infix_to_postfix(expression= infix_expression))
+postfix_expression =obj.infix_to_postfix(expression= infix_expression)
+print(postfix_expression)
+
+print("*****************************")
+print("Evaluating Postfix Expression")
+print("*****************************")
+print((evaluator.evaluate_postfix(postfix_expression)))

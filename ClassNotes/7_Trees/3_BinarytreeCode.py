@@ -8,35 +8,31 @@ node creation, insertion, traversal (inorder, preorder, postorder), and searchin
 - preorder (Root, Left, Right)
 '''
 #Tree Node is defined for the binary trees
-class BinaryTree:
-    def __init__(self, value, left= None, right= None):
-        #initializing the root node
-        self.data = value
+class Node:
+    def __init__(self,value,left= None, right= None):
+        self.value = value
         self.left = None
-        self.right = None
+        self.right = None   
     #method to insert the node
     def addNode(self,value):
-        if self.data:
-            if value < self.data:
-                if not self.left:
-                    self.left = BinaryTree(value=value)
-                else:
-                    self.left.addNode(value)
+        if value < self.value:
+            if not self.left:
+                self.left = Node(value=value)
             else:
-                if not self.right:
-                    self.right = BinaryTree(value=value)
-                else:
-                    self.right.addNode(value=value)
+                self.left.addNode(value)
         else:
-            self.data = value
+            if not self.right:
+                self.right = Node(value=value)
+            else:
+                self.right.addNode(value=value)
     def inorder_traversal(self):
         if self.left:
             self.left.inorder_traversal()
-        print(self.data, end=" ")
+        print(self.value, end=" ")
         if self.right:
             self.right.inorder_traversal()
     def preorder_traversal(self):
-        print(self.data, end=" ")
+        print(self.value, end=" ")
         if self.left:
             self.left.preorder_traversal()
         if self.right:
@@ -46,7 +42,36 @@ class BinaryTree:
             self.left.postorder_traversal()
         if self.right:
             self.right.postorder_traversal()
-        print(self.data, end = " ")
+        print(self.value, end = " ")
+    def searchNode(self, key):
+        #Iterative search
+        current = self #Current node
+        while current:
+            if key == current.value:
+                return self #Current node found
+            elif key < current.value:
+                current = current.left
+            elif key > current.value:
+                current = current.right
+        return None
+
+class BinaryTree:
+    def __init__(self, value):
+        #initializing the root node
+        self.root = Node(value)
+    def addNode(self, value):
+        self.root.addNode(value=value)
+    def inorder_traversal(self):
+        self.root.inorder_traversal()
+        print()
+    def preorder_traversal(self):
+        self.root.preorder_traversal()
+        print()
+    def postorder_traversal(self):
+        self.root.postorder_traversal()
+        print()
+    def searchNode(self, key):
+        return self.root.searchNode(key)    
 
 #Testing
 tree = BinaryTree(10) #Inilializing root node
@@ -69,3 +94,9 @@ tree.preorder_traversal()
 #PostOrder Traversal
 print("\n**ُPostorder Traversal**")
 tree.postorder_traversal()
+
+#Searching
+print("------------------------")
+print("Binary Search")
+key = int(input("Enter Key: "))
+print(f"Found: {key}" if tree.searchNode(key) else "Not Found")

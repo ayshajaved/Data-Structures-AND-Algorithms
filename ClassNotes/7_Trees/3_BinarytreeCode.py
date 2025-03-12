@@ -48,7 +48,7 @@ class Node:
         current = self #Current node
         while current:
             if key == current.value:
-                return self #Current node found
+                return current #Current node found
             elif key < current.value:
                 current = current.left
             elif key > current.value:

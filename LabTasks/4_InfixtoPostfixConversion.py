@@ -44,8 +44,9 @@ class InfixToPostfix:
         '''
         If there is a character, it will be pushed to the postfix, otherwise if it is a operator, pushed to stack, pushing check if the pop element has higher precendence then current character, that that element is pushed to postfix(list)
         '''
+        expression = expression.replace(" ", "") 
         for char in expression:
-            expression = expression.replace(" ", "") #Excluding spaes
+           #Excluding spaes
             if char.isalnum():
                 #append to postfix
                 self.postfix.append(char)
@@ -84,6 +85,8 @@ class EvaluatingPostfix:
                     self.stack.push(a * b)
                 elif char == '/':
                     self.stack.push(a / b)
+                elif char == '^':
+                    self.stack.push(a ** b)
         return self.stack.pop()
 #Testing
 # s = Stack()

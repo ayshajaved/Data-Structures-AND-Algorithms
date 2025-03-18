@@ -64,7 +64,12 @@ class Floyd:
         return cycle_start
     
     def remove_cycle(self, cycle_start):
-        pass
+        if not self.head or not cycle_start:
+            return
+        current = cycle_start
+        while current.next != cycle_start:
+            current = current.next
+        current.next = None
 
     #Method to display the list
     def printList(self, head):
@@ -82,7 +87,7 @@ class Floyd:
             visited.add(id(currentNode))  # Add node's memory address to visited set
             currentNode = currentNode.next
         print(" --> ".join(result))
-        
+    
 
 #Testing The solution
 list = Floyd()
@@ -103,3 +108,9 @@ list.printList(list.getHead())
 #Detecting cycle
 cycle_start = list.detect_cycle()
 list.printList(cycle_start) #must print from 40
+
+#Removing Cycle
+list.remove_cycle(cycle_start=cycle_start)
+
+#Printing List After Removing
+list.printList(list.getHead())

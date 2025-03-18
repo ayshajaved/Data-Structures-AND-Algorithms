@@ -73,8 +73,13 @@ class Floyd:
             return
         currentNode = head
         result = []
+        visited = set()  # To track visited nodes by their memory address
         while currentNode:
+            if id(currentNode) in visited:  # Check if we've seen this node before
+                result.append(f"{currentNode.data} (cycle detected)")
+                break
             result.append(str(currentNode.data))
+            visited.add(id(currentNode))  # Add node's memory address to visited set
             currentNode = currentNode.next
         print(" --> ".join(result))
         

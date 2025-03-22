@@ -17,7 +17,7 @@ class CircularQueue:
             raise IndexError("Queue is Full..")
         if self.is_empty():
             self.front = 0
-        #Increamenting the formula using the rear formula
+        #Increamenting the rear using the rear formula
         self.rear = (self.rear+1)% self.capacity
         self.queue[self.rear] = item
         self.size +=1

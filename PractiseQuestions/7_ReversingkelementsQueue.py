@@ -30,13 +30,16 @@ class ReverseKQueue:
             self.rear +=1
         else:
             self.rear +=1
-        self.queue.append(value)
+        if self.rear < len(self.queue):  # Reuse space if available
+            self.queue[self.rear] = value
+        else:
+            self.queue.append(value)
 
     def dequeue(self):
         if self.is_empty():
             raise "Queue is empty.."
         removed_element = self.queue[self.front]
-        if self.get_size()==0:
+        if self.front == self.rear:
             #last element is removed
             self.front = -1
             self.rear = -1
@@ -50,28 +53,37 @@ class ReverseKQueue:
         for i in range(self.front,self.get_size()):
             print(self.queue[i])
     
-    #Stack based implementation
-    # def reverse_k_elements(self,k):
-    #     if self.is_empty() or k > self.get_size() or k < 2: return
-    #     stack = []
-    #     for _ in range(k):
-    #         stack.append(self.dequeue())
-    #     while stack:
-    #         self.enqueue(stack.pop())
+    # Stack based implementation
+    def reverse_k_elements(self,k):
+        if self.is_empty() or k > self.get_size() or k < 2: return
+        stack = []
+        # Step 1: Dequeue k elements into stack
+        for _ in range(k):
+            stack.append(self.dequeue())
+        # Step 2: Create temp queue for remaining elements
+        temp = ReverseKQueue()
+        while not self.is_empty():
+            temp.enqueue(self.dequeue())
+        # Step 3: Enqueue reversed elements from stack
+        while stack:
+            self.enqueue(stack.pop())
+        # Step 4: Enqueue remaining elements from temp
+        while not temp.is_empty():
+            self.enqueue(temp.dequeue())
 
 
-    def reverse_k_elements(self, k):
-        #inplace reversal
-        if self.is_empty() or k < 2 or k > self.get_size():
-            return
-        start = self.front
-        end = self.front+ k-1 #formula for correct end, as front could be more than 0 (if dequeue)
-        count = 0
-        while count < k//2:
-            self.queue[start], self.queue[end] = self.queue[end],self.queue[start]
-            start +=1
-            end -=1
-            count +=1
+    # def reverse_k_elements(self, k):
+    #     #inplace reversal
+    #     if self.is_empty() or k < 2 or k > self.get_size():
+    #         return
+    #     start = self.front
+    #     end = self.front+ k-1 #formula for correct end, as front could be more than 0 (if dequeue)
+    #     count = 0
+    #     while count < k//2:
+    #         self.queue[start], self.queue[end] = self.queue[end],self.queue[start]
+    #         start +=1
+    #         end -=1
+    #         count +=1
 
 class Main:
     @staticmethod

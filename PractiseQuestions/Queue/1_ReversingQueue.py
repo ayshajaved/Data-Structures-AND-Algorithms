@@ -23,8 +23,8 @@ class ReverseQueue:
     
     def enqueue(self, value):
         if self.is_empty():
-            self.front +=1
-            self.rear +=1
+            self.front =0
+            self.rear =0
         else:
             self.rear +=1
         self.queue.append(value)
@@ -33,7 +33,7 @@ class ReverseQueue:
         if self.is_empty():
             raise "Queue is empty.."
         removed_element = self.queue[self.front]
-        if self.get_size()==0:
+        if self.front==self.rear:
             #last element is removed
             self.front = -1
             self.rear = -1
@@ -47,18 +47,30 @@ class ReverseQueue:
         for i in range(self.front,self.get_size()):
             print(self.queue[i])
     
+    # def reverse_queue(self):
+    #     #inplace reversal
+    #     if self.get_size()<2:
+    #         return
+    #     start = self.front
+    #     end = self.rear
+    #     count = 0
+    #     while count < self.get_size()//2:
+    #         self.queue[start], self.queue[end] = self.queue[end],self.queue[start]
+    #         start +=1
+    #         end -=1
+    #         count +=1
+    
+    #by Recursion
     def reverse_queue(self):
-        #inplace reversal
-        if self.get_size()<2:
+        #base case
+        if self.is_empty() or self.rear == self.front:
             return
-        start = self.front
-        end = self.rear
-        count = 0
-        while count < self.get_size()//2:
-            self.queue[start], self.queue[end] = self.queue[end],self.queue[start]
-            start +=1
-            end -=1
-            count +=1
+        #removing front element
+        front_element = self.dequeue()
+        #recursively calling function
+        self.reverse_queue()
+        #enqueing 
+        self.enqueue(front_element)
 
 class Main:
     @staticmethod

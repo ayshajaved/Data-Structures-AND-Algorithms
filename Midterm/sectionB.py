@@ -104,17 +104,7 @@ class RoomPatientSystem:
         patient.procedureHead = patient.procedureHead.next
         
         print("Procedure Completed..", completed)        
-        # current = patient.procedureHead
-        # patient.procedureHead = current.next
         
-        # current = patient.procedureHead
-        # procedures = []          
-        # while current:
-        #     procedures.append(current.procedure)
-        #     current = current.next                
-        # print("Procedures of Patient are: ", procedures)
-    
-    
     def removePatient(self, patientId):
         #removing patient from the priority Queue
         index = self.findPatient(patientId=patientId)

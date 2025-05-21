@@ -113,7 +113,6 @@ class Main:
                 print(f"Found {value} after {result} comparisons")
             else:
                 print(f"{value} not found in BST")
-        
         # Delete elements
         delete_values = [30, 50]
         for value in delete_values:
